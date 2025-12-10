@@ -199,9 +199,9 @@ function App() {
                 </button>
                 <button className="btn-secondary">
                   <Download className="btn-icon" />
-                  <a href="/ArnabCV.pdf" download="Arnab-Dutta-CV.pdf">
+                  <a href={process.env.PUBLIC_URL + "/ArnabCV.pdf"} download="Arnab-Dutta-CV.pdf">
                     <span>Download CV</span>
-                 </a>
+                  </a>
                 </button>
               </div>
 
