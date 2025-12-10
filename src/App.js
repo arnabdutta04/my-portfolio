@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail, ExternalLink, Code, Database, Layers, Terminal, Smartphone, Palette, Download, Phone, ArrowRight, Briefcase } from 'lucide-react';
 import './App.css';
 
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentWord, setCurrentWord] = useState(0);
@@ -26,7 +25,7 @@ function App() {
     phone: "+91 8348436484",
     github: "https://github.com/arnabdutta04",
     linkedin: "https://www.linkedin.com/in/arnab-dutta-589354291/",
-    profileImage:"/MyPhoto.png",
+    profileImage: `${process.env.PUBLIC_URL}/MyPhoto.png`,
     
     skills: [
       { 
